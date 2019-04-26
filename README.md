@@ -32,11 +32,11 @@ El vostre Bot ha d'entendre i contestar correctament les comandes següents:
 
 - `/start`
 
-> Inicia la conversa amb el Bot.
+    Inicia la conversa amb el Bot.
 
 - `/help`
 
->    El Bot ha de contestar amb una llista de totes les possibles comandes i una breu documentació sobre el seu propòsit i ús.
+    El Bot ha de contestar amb una llista de totes les possibles comandes i una breu documentació sobre el seu propòsit i ús.
 
 - `/authors`
 
@@ -44,34 +44,35 @@ El vostre Bot ha d'entendre i contestar correctament les comandes següents:
 
 - `/graph ⟨distance⟩`
 
->    Indica al bot que, a partir d'aquest moment, utilitzi un nou graf. Per fer-ho, cal que descarregui les dades actuals de les estacions de bicing i construeixi el graf geomètric amb distància `⟨distance⟩` (en metres).
+     Indica al bot que, a partir d'aquest moment, utilitzi un nou graf. Per fer-ho, cal que descarregui les dades actuals de les estacions de bicing i construeixi el graf geomètric amb distància `⟨distance⟩` (en metres).
 
->   **Nota:** Totes les comandes posteriors usen el darrer graf generat amb aquesta comanda. Per defecte, cal començar amb un graf inicial amb distància 1000.
+    **Nota:** Totes les comandes posteriors usen el darrer graf generat amb aquesta comanda. Per defecte, cal començar amb un graf inicial amb distància 1000.
 
 - `/nodes`
 
-> Escriu el nombre de nodes en el graf.
+    Escriu el nombre de nodes en el graf.
 
 - `/edges`
 
-> Escriu el nombre d'arestes en el graf.
+    Escriu el nombre d'arestes en el graf.
 
 - `/components`
 
-> Escriu el nombre de components connexs en el graf.
+>   Escriu el nombre de components connexs en el graf.
 
 - `/plotgraph`
 
-> Mostra una mapa amb totes les estacions del graf i les arestes que es connecten.
+    Mostra una mapa amb totes les estacions del graf i les arestes que es connecten.
 
 - `/route origen, destí`
 
-> Mostra una mapa amb el camí més ràpid per anar d'un punt d'orígen a un punt de destí. Els punts d'orígen i de destí es dónen a través de dues adreces de Barcelona separades per una coma. Per exemple:
+    Mostra una mapa amb el camí més ràpid per anar d'un punt d'orígen a un punt de destí. Els punts d'orígen i de destí es dónen a través de dues adreces de Barcelona separades per una coma. Per exemple:
 
->>`/route Passeig de Gràcia 92, La Rambla 51`
->>`/route Jordi	Girona, Plaça de Sant Jaume`
+    `/route Passeig de Gràcia 92, La Rambla 51`
 
-> La ruta ha de minimitzar el temps esperat de desplaçament, tenint en compte que la manera de desplaçar-se és a peu i/o en bicicleta. Els trams a peu es poden fer del punt d'orígen a una estació de bicing, o d'una estació de bicing al punt de destinació. Els trams en bicicleta es poden fer entre parells d'estacions de bicing a distància menor o igual que ⟨distance⟩ (és a dir, a través de les arestes del graf). La velocitat mitjana a peu és de 4 km/h i en bici de 10 km/h. Els trajectes es mesuren a vol d'ocell (línia recta).
+    `/route Jordi	Girona, Plaça de Sant Jaume`
+
+    La ruta ha de minimitzar el temps esperat de desplaçament, tenint en compte que la manera de desplaçar-se és a peu i/o en bicicleta. Els trams a peu es poden fer del punt d'orígen a una estació de bicing, o d'una estació de bicing al punt de destinació. Els trams en bicicleta es poden fer entre parells d'estacions de bicing a distància menor o igual que ⟨distance⟩ (és a dir, a través de les arestes del graf). La velocitat mitjana a peu és de 4 km/h i en bici de 10 km/h. Els trajectes es mesuren a vol d'ocell (línia recta).
 
 
 Tracteu els errors i situacions anòmales de manera raonable. En particular, el vostre programa no s'hauria d'espatllar per peticions incorrectes dels usuaris.
@@ -82,7 +83,7 @@ Tracteu els errors i situacions anòmales de manera raonable. En particular, el 
 Els sistema hauria de ser construït al voltant de l'objecte `Graph` de  la llibreria `NetworkX` i ha de tenir dos mòduls:
 
 - `data.py` amb tot el codi relacionat amb la adquisició de dades, construcció del graf i càlculs sobre el graf.
-	
+
 - `bot.py` amb tot el codi relacionat amb el bot de Telegram.
 
 Cal dissenyar el sistema de tal manera que `data.py` sigui independent de `bot.py`. Probablement no caldrà que dissenyeu les vostres classes. Utilizant els grafs de `NetworkX` i les tuples, llistes, conjunts i diccionaris de python hauria de ser suficient.
