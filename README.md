@@ -21,7 +21,7 @@ Un conjunt de punts en un espai i una distància *d* defineixen un graf geomètr
 
 Les dades amb les estacions de Bicing de la ciutat de Barcelona (mecàniques i elèctriques) es poden trobar a:
 
->[https://api.bsmsa.eu/ext/api/bsm/gbfs/v2/en/station_information](https://api.bsmsa.eu/ext/api/bsm/gbfs/v2/en/station_information)
+[https://api.bsmsa.eu/ext/api/bsm/gbfs/v2/en/station_information](https://api.bsmsa.eu/ext/api/bsm/gbfs/v2/en/station_information)
 
 Aquest és un arxiu en format JSON que inclou diverses informacions sobre les estacions de bicing (coordenades geogràfiques, adreça, etc.).
 
@@ -58,7 +58,7 @@ El vostre Bot ha d'entendre i contestar correctament les comandes següents:
 
 - `/components`
 
->   Escriu el nombre de components connexs en el graf.
+   Escriu el nombre de components connexs en el graf.
 
 - `/plotgraph`
 
