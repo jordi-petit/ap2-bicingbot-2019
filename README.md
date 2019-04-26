@@ -40,7 +40,7 @@ El vostre Bot ha d'entendre i contestar correctament les comandes següents:
 
 - `/authors`
 
-> El Bot ha d'escriure el nom complet dels autors del projecte i els seus correus electrònics oficials.
+    El Bot ha d'escriure el nom complet dels autors del projecte i els seus correus electrònics oficials.
 
 - `/graph ⟨distance⟩`
 
