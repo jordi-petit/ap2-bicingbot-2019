@@ -120,6 +120,7 @@ Aquests enllaços us seran útils per fer el vostre projecte:
 - [Tutorial de NetworkX](https://networkx.github.io/documentation/stable/tutorial.html)
 
 - [Notebook (per jupyter) on es donen alguns exemples d'utilització d'alguns mòduls](Annex.ipynb)
+   Vegeu https://nbviewer.jupyter.org/urls/jpetit.jutge.org/Annex.ipynb
 
 # Instruccions
 
