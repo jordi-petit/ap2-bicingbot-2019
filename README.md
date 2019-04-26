@@ -119,7 +119,7 @@ Aquests enllaços us seran útils per fer el vostre projecte:
 
 - [Tutorial de NetworkX](https://networkx.github.io/documentation/stable/tutorial.html)
 
-- [Notebook (per jupyter) on es donen alguns exemples d'utilització d'alguns mòduls](https://raw.githubusercontent.com/jutge-org/ap2-bicingbot-2019/master/Annex.ipynb?token=AAR6FTTUZJBDB4T5IZZMX3K4ZQYFK)
+- [Notebook (per jupyter) on es donen alguns exemples d'utilització d'alguns mòduls](https://raw.githubusercontent.com/jutge-org/ap2-bicingbot-2019/master/Annex.ipynb?token=AAR6FTTUZJBDB4T5IZZMX3K4ZQYFK).
    Vegeu https://nbviewer.jupyter.org/urls/jpetit.jutge.org/Annex.ipynb
 
 # Instruccions
