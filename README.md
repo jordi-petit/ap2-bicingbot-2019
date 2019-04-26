@@ -68,9 +68,8 @@ El vostre Bot ha d'entendre i contestar correctament les comandes següents:
 
     Mostra una mapa amb el camí més ràpid per anar d'un punt d'orígen a un punt de destí. Els punts d'orígen i de destí es dónen a través de dues adreces de Barcelona separades per una coma. Per exemple:
 
-    `/route Passeig de Gràcia 92, La Rambla 51`
-
-    `/route Jordi	Girona, Plaça de Sant Jaume`
+    - `/route Passeig de Gràcia 92, La Rambla 51`
+    - `/route Jordi	Girona, Plaça de Sant Jaume`
 
     La ruta ha de minimitzar el temps esperat de desplaçament, tenint en compte que la manera de desplaçar-se és a peu i/o en bicicleta. Els trams a peu es poden fer del punt d'orígen a una estació de bicing, o d'una estació de bicing al punt de destinació. Els trams en bicicleta es poden fer entre parells d'estacions de bicing a distància menor o igual que ⟨distance⟩ (és a dir, a través de les arestes del graf). La velocitat mitjana a peu és de 4 km/h i en bici de 10 km/h. Els trajectes es mesuren a vol d'ocell (línia recta).
 
