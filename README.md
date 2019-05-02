@@ -167,7 +167,82 @@ El termini de lliurament és el dia 6 de juny a les 23:59.
 
 ## Servidor de la FIB
 
-En breu s'us explicarà com fer servir un servidor de la FIB per deixar el vostre bot executant-se permanentment.
+Quan executeu el vostre bot en el vostre ordinador, tothom a Telegram hi pot
+interactuar. Però quan atureu el bot o apagueu vostre ordinador, el bot
+mor!
+
+Per poder tenir el bot permanentment encès, l'heu d'instal·lar en un
+ordinador que sempre estigui connectat. Per aquesta pràctica, la FIB us
+ha configurat un servidor on podreu pujar el vostre bot i executar-lo durant
+tota la resta del curs.
+
+El servidor de la FIB és una màquina anomenada `ditto.fib.upc.edu` (IP:
+10.4.41.160) a la qual us heu de connectar a través de `ssh` (*secure shell*)
+utilitzant un *username* i un *password* que us enviarem un cop rebuts tots
+els equips. L'accés al servidor de la FIB es fa des de les aules o des de la
+VPN UPC amb un client de SSH.  Utilitzeu aquest servidor exclusivament per fer
+aquesta pràctica d'AP2. No es fa backup d'aquest servidor!
+
+El servidor de la FIB és una màquina Linux com qualsevol altra,
+però sense entorn gràfic i amb accés via ssh. Essencialment podeu fer-hi el
+mateix que podeu fer a qualsevol altra màquina, només cal que tingueu sempre
+en compte "a quina màquina sou".
+
+Per connectar-vos al servidor, utilitzeu la comanda
+
+```bash
+ssh username@ditto.fib.upc.edu
+```
+
+remplaçant *username* pel vostre *username* i donant el vostre *password*
+(segurament el primer cop us demanarà una confirmació).
+
+Un cop entrats, teniu una finestra oberta executant un terminal al servidor:
+Les comandes que escriviu es realitzen al servidor. Per exemple, si executeu
+
+```bash
+ls
+```
+
+veureu els fitxers que hi teniu (cap al principi).  Si necessiteu editar algun
+fitxer, podeu usar editors de text, com ara `nano`, `joe`, `emacs` o `vi`.
+Podeu sortir  de la sessió ssh al servidor amb `logout` o
+<kbd>Control</kbd>+<kbd>D</kbd>.
+
+Podeu transferir els fitxers del vostre ordinador cap al servidor  o al revés
+amb  la comanda `scp` (*secure copy*). Funciona igual que el `cp` però copia a
+través de la xarxa. Per exemple, per copiar el vostre directori `superbot`
+del vostre ordinador al servidor heu d'escriure:
+
+```bash
+scp -r superbot username@ditto.fib.upc.edu:
+```
+
+Al revés, podeu copiar el directori `superbot` del servidor al vostre ordinador
+fent:
+
+```bash
+scp -r username@ditto.fib.upc.edu:superbot .
+```
+
+Per executar un programa ⟨programa.py⟩ en Python al servidor, utilitzeu
+`python3 ⟨programa.py⟩`. Si necessiteu instal·lar un paquet ⟨paquet⟩ de
+Python, utilitzeu `pip3 install ⟨paquet⟩`. També podeu instal·lar tots els
+paquets del fitxer `requirements.txt` amb `pip3 install -r requirements.txt`.
+
+Si voleu deixar un programa corrent permanentment, executeu-lo amb `nohup`.
+Per exemple, el meu bot [BicingBit](https://t.me/AP2_BicingBot) s'engega així:
+
+```
+nohup python3 ap2bicingbot.py &
+```
+
+La sortida del programa anirà a parar a un fitxer `nohup.out`.
+
+Per aturar un procés llançat amb `nohup`,
+busqueu el seu PID (identificador de procés) a la taula de
+processos amb `ps x` i executeu  `kill PID`.
+
 
 
 ## Consells
