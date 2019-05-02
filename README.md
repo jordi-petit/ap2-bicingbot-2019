@@ -254,3 +254,8 @@ no pengeu el vostre projecte en repositoris públics. Si us cal un repositori
 GIT, useu [GITLAB FIB](https://gitlab.fib.upc.edu/users/sign_in).
 
 
+## Autors
+
+Jordi Cortadella i Jordi Petit
+
+Universitat Politècnica de Cataluna, 2019
