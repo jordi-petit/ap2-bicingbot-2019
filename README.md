@@ -140,7 +140,7 @@ Si no es reb cap missatge d'equip per aquesta data, es considerarà que feu la p
 
 ## Lliurament
 
-Heu de lliurar la vostra pràctica per correu electrònic al Racó.
+Heu de lliurar la vostra pràctica al Racó.
 Només heu de lliurar un fitxer ZIP que, al descomprimir-se
 generi els fitxers `data.py` i `bot.py`, un fitxer `requirements.txt` i un
 fitxer `README.md`. Res més. Sense directoris.
